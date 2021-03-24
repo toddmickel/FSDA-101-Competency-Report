@@ -1,0 +1,251 @@
+/* Global: The * means all */
+:root {       /* Can be used to define global variables */
+    --primary:rgb(43, 43, 43); /*primary is variable name */
+    --text: rgb(202, 24, 60);
+}
+
+*{
+    margin:0
+}
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(187, 187, 187);
+}
+p {
+    font-size:1.1rem;
+    line-height:2
+    margin:1rem;
+}
+
+h2,h3 {
+    margin-top:1rem;
+    margin-bottom: .5rem;;
+    text-align: center;
+}
+
+h2 {
+    font-size:2rem;
+}
+
+h3 {
+    font-size:1.5rem
+}
+
+/* Utilities */
+.site-header {
+    padding-top: 1.5rem;
+    text-align:center;
+    height:60vh;
+    background-image: url(../img/developerblu.jpg);
+    background-size: cover;
+    background-color:black;
+    color: white;
+}
+.site-header img{
+    width:8rem;
+    border-radius: 50%;
+    border:5px solid #ffffff;
+    padding: 2px;
+    opacity: .9;
+}
+.site-header p {
+    margin-top:1rem;
+    font-size:1.2rem;
+}
+
+.site-header h1{
+    padding-top:1rem;
+    font-size:2rem;
+}
+
+.container{
+    width:80%;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.bio img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border: 3px solid rgb(0, 0, 94);
+    border-radius: 1rem;
+    width: 30%;
+    min-width: 250px;
+    padding: 2px;
+}
+/* Biography */
+.biopara{
+    background-color: #dedede;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem;
+    border: 1px solid black;  
+}
+
+.biopara img{
+    border: none;
+    width: 20%;
+}
+.bio h1 {
+    padding: 1rem;
+}
+
+
+.bio h3{
+    margin-top: 0;
+    padding-bottom: .5rem;
+}
+
+nav.menu {
+    background-color: var(--primary);
+    text-align: center;
+}
+
+nav.menu a{
+    display:inline-block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color:white;
+    padding: 1rem;
+    margin-right: 3rem;
+}
+
+@media(max-width: 768px) { /*mobile presentation */
+    nav.menu a{
+        display: block;
+    }
+}
+
+nav.menu a:hover {
+    font-size:1.3rem;
+    color: var(--text);
+    font-weight: bold;
+}
+
+/* service */
+.services-container {
+    display: flex;
+}
+@media(max-width: 768px) {
+    .services-container {
+        display: block;
+    }
+}
+.service {
+    background-color: #dedede;
+    padding: 1rem;
+    padding-top: 0;
+    border-radius: 10px;
+    margin: 1rem;
+    border: 1px solid black;  
+}
+
+/* Contact */
+.contact-container {
+    display: flex;
+}
+@media(max-width: 768px) {
+    .contact-container {
+        display: block;
+    }
+}
+
+.contact-info {
+    background-color: #dedede;
+    padding: 1rem;
+    padding-top: 1;
+    border-radius: 10px;
+    margin: 1rem;
+    border: 1px solid black; 
+}
+
+#addresses{
+    min-width: 350px;
+}
+
+/* icons */
+.icons {
+    text-align: center;
+}
+
+.icons i {
+    margin-right: 2rem;
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+.fa-html5{
+    color: firebrick;
+}
+
+.fa-css3-alt{
+    color:rgb(0, 104, 190);
+}
+
+.fa-js-square{
+    color: #e4d500;
+}
+
+.fa-python{
+    color: darkblue;
+}
+
+.fa-swift{
+    color:chocolate;
+}
+
+.fa-java{
+    color:cornflowerblue;
+}
+
+.fa-facebook{
+    color: #4267B2;
+}
+
+.fa-twitter{
+    color: #1DA1F2;
+}
+
+.fa-linkedin{
+    color: #2867B2;
+}
+
+
+#bullet{
+    font-size:1.5em;
+}
+
+#child{
+    font-size:1.5em;
+}
+
+#adult{
+    font-size:2em;
+}
+
+/* projects */
+.project {
+    background-color: #dedede;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem;
+    border: 1px solid black;                    
+}
+
+.projects-container {
+    display: block;
+}
+
+
+/* footer */
+.footer-site {
+    margin-top: .5rem;
+    padding:.5rem 0 1rem 1rem;
+    background-color:var(--primary);
+    color: white;
+    text-align: center;
+}
